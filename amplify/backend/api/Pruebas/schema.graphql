@@ -1,0 +1,7 @@
+type Person @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String!
+  number: String!
+  birthday: AWSDate
+  visit: AWSDateTime!
+}
